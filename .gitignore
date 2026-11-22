@@ -1,0 +1,6 @@
+target/
+*.bad
+*.log
+*.exe
+*.zip
+*.msi
