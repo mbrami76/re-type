@@ -6,7 +6,7 @@ Re:Type types the text on the Windows clipboard into the field you are working i
 
 Press a global hotkey and the clipboard text is typed, character by character, into whatever has the keyboard focus. Press **Esc** to stop.
 
-![Re:Type icon](re-type/assets/re-type-256.png)
+![Re:Type icon](re-type/assets/re-type-splash.jpeg)
 
 ## Features
 
