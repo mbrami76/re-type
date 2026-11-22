@@ -97,4 +97,4 @@ jobs:
           gh release create "${GITHUB_REF_NAME}" dist/* \
             --repo "${GITHUB_REPOSITORY}" \
             --title "Re:Type ${VERSION}" \
-            --notes "Windows 10 and 11 (64-bit). Check the download with the .sha256 file: sha256sum -c re-type-${VERSION}.exe.sha256 (or Get-FileHash in PowerShell). The executable is not code-signed yet, so Windows may show an unknown publisher warning."
+            --notes-file "docs/release-notes/${VERSION}.md"
