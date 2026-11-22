@@ -29,7 +29,7 @@ jobs:
       run:
         working-directory: re-type
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Install the Rust tool chain
         run: |
@@ -61,7 +61,7 @@ jobs:
       # the signing service takes the unsigned executable from this job's artifact and returns the
       # signed file, and the checksum is computed on the signed file.
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: re-type-${{ steps.pack.outputs.version }}
           path: dist/
@@ -74,7 +74,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Check that the tag matches the version of the program
         run: |
@@ -85,7 +85,7 @@ jobs:
           fi
           echo "VERSION=${version}" >> "$GITHUB_ENV"
 
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: re-type-${{ env.VERSION }}
           path: dist
